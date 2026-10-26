@@ -1,0 +1,110 @@
+[
+  {
+    "nome": "Fan 160",
+    "categoria": "Iniciante",
+    "cilindrada": "160cc",
+    "potencia": "15 cv",
+    "torque": "14 Nm",
+    "consumo": "50 km/l",
+    "peso": "124 kg",
+    "velocidade_maxima": "130 km/h",
+    "transmissao": "Manual 4 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "CBR 300",
+    "categoria": "Iniciante",
+    "cilindrada": "291cc",
+    "potencia": "26 cv",
+    "torque": "27 Nm",
+    "consumo": "38 km/l",
+    "peso": "164 kg",
+    "velocidade_maxima": "170 km/h",
+    "transmissao": "Manual 6 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "Sahara 300",
+    "categoria": "Iniciante",
+    "cilindrada": "293cc",
+    "potencia": "25 cv",
+    "torque": "26 Nm",
+    "consumo": "42 km/l",
+    "peso": "157 kg",
+    "velocidade_maxima": "165 km/h",
+    "transmissao": "Manual 5 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "CB 500F",
+    "categoria": "Intermediário",
+    "cilindrada": "471cc",
+    "potencia": "50 cv",
+    "torque": "46 Nm",
+    "consumo": "28 km/l",
+    "peso": "189 kg",
+    "velocidade_maxima": "200 km/h",
+    "transmissao": "Manual 6 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "CBR 600RR",
+    "categoria": "Intermediário",
+    "cilindrada": "599cc",
+    "potencia": "120 cv",
+    "torque": "65 Nm",
+    "consumo": "25 km/l",
+    "peso": "210 kg",
+    "velocidade_maxima": "250 km/h",
+    "transmissao": "Manual 6 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "NC 500X",
+    "categoria": "Intermediário",
+    "cilindrada": "471cc",
+    "potencia": "50 cv",
+    "torque": "46 Nm",
+    "consumo": "30 km/l",
+    "peso": "220 kg",
+    "velocidade_maxima": "200 km/h",
+    "transmissao": "Manual 6 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "CB 1000 Hornet",
+    "categoria": "Avançado",
+    "cilindrada": "1000cc",
+    "potencia": "150 cv",
+    "torque": "104 Nm",
+    "consumo": "18 km/l",
+    "peso": "215 kg",
+    "velocidade_maxima": "280 km/h",
+    "transmissao": "Manual 6 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "CBR 1000RR Fireblade",
+    "categoria": "Avançado",
+    "cilindrada": "1000cc",
+    "potencia": "215 cv",
+    "torque": "113 Nm",
+    "consumo": "16 km/l",
+    "peso": "201 kg",
+    "velocidade_maxima": "300 km/h",
+    "transmissao": "Manual 6 velocidades",
+    "combustivel": "Gasolina"
+  },
+  {
+    "nome": "Africa Twin",
+    "categoria": "Avançado",
+    "cilindrada": "1084cc",
+    "potencia": "100 cv",
+    "torque": "110 Nm",
+    "consumo": "15 km/l",
+    "peso": "240 kg",
+    "velocidade_maxima": "210 km/h",
+    "transmissao": "Manual 6 velocidades",
+    "combustivel": "Gasolina"
+  }
+]

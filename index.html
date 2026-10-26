@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia de Motos Honda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="./images/honda1.png" alt="Honda Logo">
+    <h1>Guia de Motos Honda</h1>
+    <button class="btn-pesquisa" id="btnPesquisa">
+      Pesquisa <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </header>
+
+  <!-- Barra de pesquisa -->
+  <div class="barra-pesquisa" id="barraPesquisa">
+    <input type="text" id="inputPesquisa" placeholder="Pesquisar moto...">
+    <button id="btnFecharPesquisa"><i class="fa-solid fa-xmark"></i></button>
+    <div class="resultados-pesquisa" id="resultadosPesquisa"></div>
+  </div>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#inicio">
+        <i class="fa-solid fa-house me-1"></i> Home
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#motos">
+        <i class="fa-solid fa-motorcycle me-1"></i> Motos
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sobre">
+        <i class="fa-solid fa-circle-info me-1"></i> Sobre
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cadastro">
+        <i class="fa-solid fa-user me-1"></i> Cadastro
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fichatecnica">
+        <i class="fa-solid fa-file-lines me-1"></i> Ficha Técnica
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#video">
+        <i class="fa-solid fa-video me-1"></i> Vídeo
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cards">
+        <i class="fa-solid fa-id-card me-1"></i> Cards
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#grafico">
+        <i class="fa-solid fa-chart-bar me-1"></i> Gráfico
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#localizacao">
+        <i class="fa-solid fa-location-dot me-1"></i> Localização
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="tabs-content">
+
+    <!-- ===== HOME ===== -->
+    <div class="tab-pane fade show active" id="inicio">
+      <div class="container-vermelho">
+
+        <section class="secao">
+          <h2>Sobre o Site</h2>
+          <p>Este site mostra motos Honda ideais para cada nível de experiência.</p>
+        </section>
+
+        <section class="secao">
+          <h2>Iniciantes</h2>
+          <div class="grade-motos">
+            <div class="card-moto">
+              <img src="./images/fan-removebg-preview.png" alt="Fan 160">
+              <h3>Fan 160</h3>
+              <p>A CG 160 Fan é uma moto leve e econômica, com 160cc e cerca de 15 cv. É muito fácil de pilotar e perfeita para quem está começando.</p>
+            </div>
+            <div class="card-moto">
+              <img src="./images/cbr300r-removebg-preview.png" alt="CBR 300">
+              <h3>CBR 300</h3>
+              <p>A CBR 300R é uma esportiva de entrada com 291cc e cerca de 26 cv. Oferece visual esportivo e desempenho moderado para iniciantes.</p>
+            </div>
+            <div class="card-moto">
+              <img src="./images/sahara-removebg-preview.png" alt="Sahara 300">
+              <h3>Sahara 300</h3>
+              <p>A Sahara 300 é uma moto versátil com 293cc e cerca de 25 cv. Funciona bem na cidade, estrada e até em aventuras leves.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Intermediário</h2>
+          <div class="grade-motos">
+            <div class="card-moto">
+              <img src="./images/cb500f.avif" alt="CB 500F">
+              <h3>CB 500F</h3>
+              <p>A CB 500F é uma naked de médio porte com 471cc e cerca de 50 cv. Oferece boa aceleração e estabilidade para pilotos intermediários.</p>
+            </div>
+            <div class="card-moto">
+              <img src="./images/cbr600.png" alt="CBR 600RR">
+              <h3>CBR 600RR</h3>
+              <p>A CBR 600RR é uma esportiva com 599cc e cerca de 120 cv. Foi feita para desempenho elevado e pilotagem mais esportiva.</p>
+            </div>
+            <div class="card-moto">
+              <img src="./images/nc500.avif" alt="NC 500X">
+              <h3>NC 500X</h3>
+              <p>A NC500X é uma moto confortável com 471cc e cerca de 50 cv. É ideal para viagens, uso diário e pilotos intermediários.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Avançado</h2>
+          <div class="grade-motos">
+            <div class="card-moto">
+              <img src="./images/cb1000hornet-removebg-preview.png" alt="CB 1000 Hornet">
+              <h3>CB 1000 Hornet</h3>
+              <p>A CB1000 Hornet é uma naked potente com 1000cc e cerca de 150 cv. Oferece aceleração muito forte e tecnologia moderna.</p>
+            </div>
+            <div class="card-moto">
+              <img src="./images/fireblade.webp" alt="CBR 1000RR Fireblade">
+              <h3>CBR 1000RR Fireblade</h3>
+              <p>A CBR1000RR Fireblade é uma superesportiva com 1000cc e mais de 200 cv. Foi projetada para máxima performance e velocidade.</p>
+            </div>
+            <div class="card-moto">
+              <img src="./images/africatwin-removebg-preview.png" alt="Africa Twin">
+              <h3>Africa Twin</h3>
+              <p>A Africa Twin é uma big trail com 1084cc e cerca de 100 cv. Foi criada para aventuras longas e terrenos difíceis.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ===== MOTOS (CARROSSEL) ===== -->
+    <div class="tab-pane fade" id="motos">
+      <div class="container-vermelho">
+
+        <section class="secao">
+          <h2>Motos</h2>
+          <p>Explore as motos Honda divididas por nível com carrosséis automáticos.</p>
+        </section>
+
+        <section class="secao">
+          <h2>Iniciante</h2>
+          <div class="carousel-row">
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <div class="carousel-track-container">
+              <div class="carousel-track">
+                <div class="card-moto">
+                  <img src="./images/fan-removebg-preview.png" alt="Fan 160">
+                  <h3>Fan 160</h3>
+                  <p>A CG 160 Fan é leve e econômica, com 160cc e cerca de 15 cv. Fácil de pilotar para iniciantes.</p>
+                </div>
+                <div class="card-moto">
+                  <img src="./images/cbr300r-removebg-preview.png" alt="CBR 300">
+                  <h3>CBR 300</h3>
+                  <p>A CBR 300R é uma esportiva de entrada com 291cc e cerca de 26 cv. Visual esportivo e desempenho moderado.</p>
+                </div>
+                <div class="card-moto">
+                  <img src="./images/sahara-removebg-preview.png" alt="Sahara 300">
+                  <h3>Sahara 300</h3>
+                  <p>A Sahara 300 é versátil com 293cc e cerca de 25 cv. Perfeita para cidade, estrada e aventuras leves.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Próximo">&#10095;</button>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Intermediário</h2>
+          <div class="carousel-row">
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <div class="carousel-track-container">
+              <div class="carousel-track">
+                <div class="card-moto">
+                  <img src="./images/cb500f.avif" alt="CB 500F">
+                  <h3>CB 500F</h3>
+                  <p>CB 500F é uma naked de médio porte com 471cc e cerca de 50 cv. Boa aceleração e estabilidade.</p>
+                </div>
+                <div class="card-moto">
+                  <img src="./images/cbr600.png" alt="CBR 600RR">
+                  <h3>CBR 600RR</h3>
+                  <p>CBR 600RR é uma esportiva com 599cc e 120 cv. Proposta para desempenho elevado e pilotagem esportiva.</p>
+                </div>
+                <div class="card-moto">
+                  <img src="./images/nc500.avif" alt="NC 500X">
+                  <h3>NC 500X</h3>
+                  <p>NC 500X é confortável com 471cc e cerca de 50 cv. Ideal para viagens, uso diário e pilotos intermediários.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Próximo">&#10095;</button>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Avançado</h2>
+          <div class="carousel-row">
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <div class="carousel-track-container">
+              <div class="carousel-track">
+                <div class="card-moto">
+                  <img src="./images/cb1000hornet-removebg-preview.png" alt="CB 1000 Hornet">
+                  <h3>CB 1000 Hornet</h3>
+                  <p>CB1000 Hornet é uma naked potente com 1000cc e cerca de 150 cv. Aceleração forte e tecnologia moderna.</p>
+                </div>
+                <div class="card-moto">
+                  <img src="./images/fireblade.webp" alt="CBR 1000RR Fireblade">
+                  <h3>CBR 1000RR Fireblade</h3>
+                  <p>CBR 1000RR Fireblade é uma superesportiva com 1000cc e mais de 200 cv. Projetada para performance máxima.</p>
+                </div>
+                <div class="card-moto">
+                  <img src="./images/africatwin-removebg-preview.png" alt="Africa Twin">
+                  <h3>Africa Twin</h3>
+                  <p>Africa Twin é uma big trail com 1084cc e cerca de 100 cv. Ideal para aventuras longas e terrenos difíceis.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Próximo">&#10095;</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ===== SOBRE ===== -->
+    <div class="tab-pane fade" id="sobre">
+      <div class="container-vermelho">
+        <section class="secao">
+          <h2>Sobre o MotoHub</h2>
+        </section>
+        <section class="secao">
+          <h2>Quem Somos</h2>
+          <p>O MotoHub é um site criado para reunir informações sobre algumas das motos mais interessantes do mercado.</p>
+        </section>
+        <section class="secao">
+          <h2>Nosso Objetivo</h2>
+          <p>A ideia do projeto é facilitar o acesso a informações sobre motos para iniciantes e entusiastas.</p>
+        </section>
+        <section class="secao">
+          <h2>Sobre o Projeto</h2>
+          <p>Este site foi desenvolvido como parte de um projeto acadêmico no curso de Desenvolvimento de Software Multiplataforma.</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- ===== CADASTRO ===== -->
+    <div class="tab-pane fade" id="cadastro">
+      <div class="container-form">
+        <h2>PARTICIPE</h2>
+        <p class="texto-instrucao">Para realizar seu cadastro, informe os dados solicitados abaixo.</p>
+
+        <!-- Sub-abas do cadastro -->
+        <ul class="nav nav-tabs nav-cadastro" id="tabsCadastro">
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#cad-pessoal">
+              <i class="fa-solid fa-user me-1"></i> Dados Pessoais
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cad-estudantil">
+              <i class="fa-solid fa-graduation-cap me-1"></i> Dados Estudantis
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cad-postal">
+              <i class="fa-solid fa-envelope me-1"></i> Dados Postais
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content caixa-form">
+
+          <!-- Dados Pessoais -->
+          <div class="tab-pane fade show active" id="cad-pessoal">
+            <h3 class="titulo-subaba">Dados Pessoais</h3>
+            <div class="linha-campos">
+              <div class="campo campo-pequeno">
+                <label>CPF*</label>
+                <input type="text" placeholder="000.000.000-00" id="cpf-input" maxlength="14">
+              </div>
+              <div class="campo campo-medio">
+                <label>Nome Completo*</label>
+                <input type="text" placeholder="Digite seu nome completo">
+              </div>
+              <div class="campo campo-pequeno">
+                <label>Nascimento*</label>
+                <input type="text" placeholder="dd/mm/aaaa" maxlength="10" id="nasc-input">
+              </div>
+            </div>
+            <div class="linha-campos">
+              <div class="campo campo-pequeno">
+                <label>RG*</label>
+                <input type="text" placeholder="Digite o seu RG">
+              </div>
+              <div class="campo campo-medio">
+                <label>E-mail*</label>
+                <input type="email" placeholder="Digite seu e-mail">
+              </div>
+              <div class="campo campo-medio">
+                <label>Confirme seu e-mail*</label>
+                <input type="email" placeholder="Digite seu e-mail novamente">
+              </div>
+            </div>
+            <div class="linha-campos">
+              <div class="campo campo-grande">
+                <label>Crie uma senha*</label>
+                <div class="campo-senha">
+                  <input type="password" placeholder="Digite uma senha" id="senha-input">
+                  <span class="olhinho" onclick="toggleSenha()">&#128065;</span>
+                </div>
+              </div>
+              <div class="campo campo-medio">
+                <label>Celular*</label>
+                <input type="tel" placeholder="(00) 0 0000-0000">
+              </div>
+            </div>
+            <div class="area-termos">
+              <label class="linha-checkbox">
+                <input type="checkbox">
+                <span>Li e concordo com o <u>Regulamento</u>, bem como com a <u>Política de Privacidade</u> e <u>Termos de uso</u>*</span>
+              </label>
+              <label class="linha-checkbox">
+                <input type="checkbox" checked>
+                <span>Aceito receber ofertas e novidades da Honda por e-mail.</span>
+              </label>
+            </div>
+            <div class="area-captcha">
+              <div class="caixa-captcha">
+                <input type="checkbox">
+                <span>Confirme que é humano</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Cloudflare_Logo.svg" alt="Cloudflare" class="logo-captcha">
+              </div>
+            </div>
+            <div class="rodape-form">
+              <span class="texto-obrigatorio">*Campos obrigatórios</span>
+              <button type="button" class="btn-continuar" onclick="proximaAba('cad-estudantil')">PRÓXIMO <i class="fa-solid fa-arrow-right ms-1"></i></button>
+            </div>
+          </div>
+
+          <!-- Dados Estudantis -->
+          <div class="tab-pane fade" id="cad-estudantil">
+            <h3 class="titulo-subaba">Dados Estudantis</h3>
+            <div class="linha-campos">
+              <div class="campo campo-medio">
+                <label>Instituição de Ensino*</label>
+                <input type="text" placeholder="Nome da instituição">
+              </div>
+              <div class="campo campo-pequeno">
+                <label>Curso*</label>
+                <input type="text" placeholder="Nome do curso">
+              </div>
+              <div class="campo campo-pequeno">
+                <label>Período*</label>
+                <select>
+                  <option>Selecione</option>
+                  <option>1º Semestre</option>
+                  <option>2º Semestre</option>
+                  <option>3º Semestre</option>
+                  <option>4º Semestre</option>
+                  <option>5º Semestre</option>
+                  <option>6º Semestre</option>
+                </select>
+              </div>
+            </div>
+            <div class="linha-campos">
+              <div class="campo campo-pequeno">
+                <label>RA / Matrícula*</label>
+                <input type="text" placeholder="Digite seu RA">
+              </div>
+              <div class="campo campo-medio">
+                <label>E-mail Institucional*</label>
+                <input type="email" placeholder="seu@faculdade.edu.br">
+              </div>
+              <div class="campo campo-pequeno">
+                <label>Ano de Ingresso*</label>
+                <input type="text" placeholder="2022">
+              </div>
+            </div>
+            <div class="linha-campos">
+              <div class="campo campo-grande">
+                <label>Área de Interesse</label>
+                <select>
+                  <option>Selecione uma área</option>
+                  <option>Desenvolvimento Web</option>
+                  <option>Desenvolvimento Mobile</option>
+                  <option>Banco de Dados</option>
+                  <option>Engenharia de Software</option>
+                  <option>Inteligência Artificial</option>
+                  <option>Segurança da Informação</option>
+                </select>
+              </div>
+              <div class="campo campo-medio">
+                <label>Modalidade</label>
+                <select>
+                  <option>Selecione</option>
+                  <option>Presencial</option>
+                  <option>EAD</option>
+                  <option>Híbrido</option>
+                </select>
+              </div>
+            </div>
+            <div class="rodape-form">
+              <button type="button" class="btn-voltar" onclick="proximaAba('cad-pessoal')"><i class="fa-solid fa-arrow-left me-1"></i> VOLTAR</button>
+              <button type="button" class="btn-continuar" onclick="proximaAba('cad-postal')">PRÓXIMO <i class="fa-solid fa-arrow-right ms-1"></i></button>
+            </div>
+          </div>
+
+          <!-- Dados Postais -->
+          <div class="tab-pane fade" id="cad-postal">
+            <h3 class="titulo-subaba">Dados Postais</h3>
+            <div class="linha-campos">
+              <div class="campo campo-pequeno">
+                <label>CEP*</label>
+                <input type="text" placeholder="00000-000" id="cep-input" maxlength="9">
+              </div>
+              <div class="campo campo-grande">
+                <label>Endereço*</label>
+                <input type="text" placeholder="Digite o endereço" id="endereco-input">
+              </div>
+              <div class="campo campo-mini">
+                <label>Número*</label>
+                <input type="text">
+              </div>
+            </div>
+            <div class="linha-campos">
+              <div class="campo campo-pequeno">
+                <label>Complemento</label>
+                <input type="text">
+              </div>
+              <div class="campo campo-pequeno">
+                <label>Bairro*</label>
+                <input type="text" placeholder="Digite o bairro" id="bairro-input">
+              </div>
+              <div class="campo campo-pequeno">
+                <label>Cidade*</label>
+                <input type="text" placeholder="Digite a cidade" id="cidade-input">
+              </div>
+              <div class="campo campo-pequeno">
+                <label>Estado*</label>
+                <select id="estado-input">
+                  <option>Selecione o estado</option>
+                  <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+                  <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+                  <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+                  <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+                  <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+                  <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+                  <option>SP</option><option>SE</option><option>TO</option>
+                </select>
+              </div>
+            </div>
+            <div class="rodape-form">
+              <button type="button" class="btn-voltar" onclick="proximaAba('cad-estudantil')"><i class="fa-solid fa-arrow-left me-1"></i> VOLTAR</button>
+              <button type="button" class="btn-continuar" onclick="finalizarCadastro()">FINALIZAR <i class="fa-solid fa-check ms-1"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FICHA TÉCNICA ===== -->
+    <div class="tab-pane fade" id="fichatecnica">
+      <div class="container-vermelho">
+        <section class="secao">
+          <h2>Ficha Técnica das Motos</h2>
+          <p>Confira as especificações técnicas completas de cada modelo Honda.</p>
+        </section>
+        <section class="secao">
+          <div id="tabela-container">
+            <table class="tabela-especificacoes">
+              <thead>
+                <tr>
+                  <th>Moto</th>
+                  <th>Categoria</th>
+                  <th>Cilindrada</th>
+                  <th>Potência</th>
+                  <th>Torque</th>
+                  <th>Consumo</th>
+                  <th>Peso</th>
+                  <th>Vel. Máx.</th>
+                  <th>Transmissão</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-motos"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ===== VÍDEO ===== -->
+    <div class="tab-pane fade" id="video">
+      <div class="container-vermelho">
+        <section class="secao">
+          <h2>Vídeo</h2>
+          <p>Assista aos vídeos sobre nossas motos Honda.</p>
+        </section>
+
+        <section class="secao">
+          <h2>Honda CBR1000RR-R Fireblade</h2>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/iPKptrZ9BBw"
+              title="Honda CBR1000RR-R Fireblade"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Honda Africa Twin — Aventura sem Limites</h2>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/rXNWxH4Rnuk"
+              title="Honda Africa Twin"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Honda CB 1000 Hornet</h2>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/t93HqF0-hLU"
+              title="Honda CB 1000 Hornet"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ===== CARDS ===== -->
+    <div class="tab-pane fade" id="cards">
+      <div class="container-vermelho">
+        <section class="secao">
+          <h2>Cards das Motos</h2>
+          <p>Conheça cada modelo em detalhes com nossos cards interativos.</p>
+        </section>
+
+        <section class="secao">
+          <h2>Iniciante</h2>
+          <div class="grade-cards">
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/fan-removebg-preview.png" alt="Fan 160">
+                  <h3>Fan 160</h3>
+                  <span class="badge-nivel iniciante">Iniciante</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>Fan 160 — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 160cc</li>
+                    <li><strong>Potência:</strong> 15 cv</li>
+                    <li><strong>Torque:</strong> 14 Nm</li>
+                    <li><strong>Peso:</strong> 124 kg</li>
+                    <li><strong>Consumo:</strong> 50 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 130 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/cbr300r-removebg-preview.png" alt="CBR 300">
+                  <h3>CBR 300</h3>
+                  <span class="badge-nivel iniciante">Iniciante</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>CBR 300 — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 291cc</li>
+                    <li><strong>Potência:</strong> 26 cv</li>
+                    <li><strong>Torque:</strong> 27 Nm</li>
+                    <li><strong>Peso:</strong> 164 kg</li>
+                    <li><strong>Consumo:</strong> 38 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 170 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/sahara-removebg-preview.png" alt="Sahara 300">
+                  <h3>Sahara 300</h3>
+                  <span class="badge-nivel iniciante">Iniciante</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>Sahara 300 — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 293cc</li>
+                    <li><strong>Potência:</strong> 25 cv</li>
+                    <li><strong>Torque:</strong> 26 Nm</li>
+                    <li><strong>Peso:</strong> 157 kg</li>
+                    <li><strong>Consumo:</strong> 42 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 165 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Intermediário</h2>
+          <div class="grade-cards">
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/cb500f.avif" alt="CB 500F">
+                  <h3>CB 500F</h3>
+                  <span class="badge-nivel intermediario">Intermediário</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>CB 500F — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 471cc</li>
+                    <li><strong>Potência:</strong> 50 cv</li>
+                    <li><strong>Torque:</strong> 46 Nm</li>
+                    <li><strong>Peso:</strong> 189 kg</li>
+                    <li><strong>Consumo:</strong> 28 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 200 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/cbr600.png" alt="CBR 600RR">
+                  <h3>CBR 600RR</h3>
+                  <span class="badge-nivel intermediario">Intermediário</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>CBR 600RR — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 599cc</li>
+                    <li><strong>Potência:</strong> 120 cv</li>
+                    <li><strong>Torque:</strong> 65 Nm</li>
+                    <li><strong>Peso:</strong> 210 kg</li>
+                    <li><strong>Consumo:</strong> 25 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 250 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/nc500.avif" alt="NC 500X">
+                  <h3>NC 500X</h3>
+                  <span class="badge-nivel intermediario">Intermediário</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>NC 500X — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 471cc</li>
+                    <li><strong>Potência:</strong> 50 cv</li>
+                    <li><strong>Torque:</strong> 46 Nm</li>
+                    <li><strong>Peso:</strong> 220 kg</li>
+                    <li><strong>Consumo:</strong> 30 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 200 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Avançado</h2>
+          <div class="grade-cards">
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/cb1000hornet-removebg-preview.png" alt="CB 1000 Hornet">
+                  <h3>CB 1000 Hornet</h3>
+                  <span class="badge-nivel avancado">Avançado</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>CB 1000 Hornet — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 1000cc</li>
+                    <li><strong>Potência:</strong> 150 cv</li>
+                    <li><strong>Torque:</strong> 104 Nm</li>
+                    <li><strong>Peso:</strong> 215 kg</li>
+                    <li><strong>Consumo:</strong> 18 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 280 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/fireblade.webp" alt="CBR 1000RR Fireblade">
+                  <h3>CBR 1000RR Fireblade</h3>
+                  <span class="badge-nivel avancado">Avançado</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>Fireblade — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 1000cc</li>
+                    <li><strong>Potência:</strong> 215 cv</li>
+                    <li><strong>Torque:</strong> 113 Nm</li>
+                    <li><strong>Peso:</strong> 201 kg</li>
+                    <li><strong>Consumo:</strong> 16 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 300 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-flip" onclick="virarCard(this)">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="./images/africatwin-removebg-preview.png" alt="Africa Twin">
+                  <h3>Africa Twin</h3>
+                  <span class="badge-nivel avancado">Avançado</span>
+                  <p class="dica-virar"><i class="fa-solid fa-rotate me-1"></i> Clique para ver specs</p>
+                </div>
+                <div class="card-back">
+                  <h3>Africa Twin — Specs</h3>
+                  <ul>
+                    <li><strong>Motor:</strong> 1084cc</li>
+                    <li><strong>Potência:</strong> 100 cv</li>
+                    <li><strong>Torque:</strong> 110 Nm</li>
+                    <li><strong>Peso:</strong> 240 kg</li>
+                    <li><strong>Consumo:</strong> 15 km/l</li>
+                    <li><strong>Vel. Máx.:</strong> 210 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ===== GRÁFICO DINÂMICO ===== -->
+    <div class="tab-pane fade" id="grafico">
+      <div class="container-vermelho">
+        <section class="secao">
+          <h2>Gráfico Dinâmico</h2>
+          <p>Compare as especificações das motos Honda visualmente.</p>
+        </section>
+
+        <section class="secao">
+          <div class="controles-grafico">
+            <label>Métrica:</label>
+            <select id="metrica-select" onchange="atualizarGrafico()">
+              <option value="potencia">Potência (cv)</option>
+              <option value="consumo">Consumo (km/l)</option>
+              <option value="peso">Peso (kg)</option>
+              <option value="velocidade">Velocidade Máx. (km/h)</option>
+            </select>
+          </div>
+          <div class="canvas-wrapper">
+            <canvas id="motoChart"></canvas>
+          </div>
+        </section>
+
+        <section class="secao">
+          <h2>Vídeos Relacionados</h2>
+          <div class="grade-videos">
+            <div class="mini-video">
+              <iframe src="https://www.youtube.com/embed/iPKptrZ9BBw" title="Fireblade" frameborder="0" allowfullscreen></iframe>
+              <p>CBR 1000RR Fireblade</p>
+            </div>
+            <div class="mini-video">
+              <iframe src="https://www.youtube.com/embed/rXNWxH4Rnuk" title="Africa Twin" frameborder="0" allowfullscreen></iframe>
+              <p>Africa Twin</p>
+            </div>
+            <div class="mini-video">
+              <iframe src="https://www.youtube.com/embed/t93HqF0-hLU" title="CB Hornet" frameborder="0" allowfullscreen></iframe>
+              <p>CB 1000 Hornet</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ===== LOCALIZAÇÃO ===== -->
+    <div class="tab-pane fade" id="localizacao">
+      <div class="container-vermelho">
+        <section class="secao">
+          <h2>Onde Estamos</h2>
+          <p>Encontre a concessionária Honda mais próxima de você.</p>
+        </section>
+        <section class="secao">
+          <div class="caixa-mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.515239699305!2d-47.39536061375241!3d-20.526089208143322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a63fe0f0eded%3A0x2b3a9d82d6c60c53!2sHonda%20Hido%20Motos%20%E2%80%93%20Concession%C3%A1ria%20de%20Motos!5e0!3m2!1spt-BR!2sbr!4v1778442061742!5m2!1spt-BR!2sbr"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="caixa-endereco">
+            <p><strong>Endereço:</strong> Av. Pres. Vargas, 1057 - Cidade Nova - Franca/SP</p>
+            <p><strong>Telefone:</strong> (16) 3711-8200</p>
+            <p><strong>Horário:</strong> Seg-Sex: 08h-18h | Sáb: 08h-12:30h</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== COOKIE BANNER (FORMULÁRIO MODAL) ===== -->
+  <div class="cookie-banner" id="cookieBanner" role="alert" aria-live="polite" aria-label="Aviso de cookies">
+    <div class="banner-texto">
+      <p>
+        Este site utiliza cookies para melhorar sua experiência, personalizar conteúdo e analisar o tráfego.
+        Você pode aceitar ou recusar o uso de cookies não essenciais. <a href="#">Saiba mais</a>
+      </p>
+    </div>
+    <div class="banner-acoes">
+      <button class="btn-cookie btn-recusar" id="btnRecusar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+        </svg>
+        Recusar
+      </button>
+      <button class="btn-cookie btn-aceitar" id="btnAceitar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5"/>
+        </svg>
+        Aceitar
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Site educativo sobre motos Honda</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
